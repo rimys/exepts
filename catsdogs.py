@@ -6,6 +6,7 @@ for file in files:
         with open(file) as pet:
             pet_names = pet.read()
     except FileNotFoundError:
-        print(f'File {file} is not found')
+        #print(f'File {file} is not found')
+        pass
     else:
         print(pet_names, '\n')
